@@ -1,0 +1,26 @@
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambientes virtuais
+venv/
+env/
+.venv/
+
+# Relatórios de cobertura
+htmlcov/
+.coverage
+coverage.xml
+
+# Logs
+*.log
+
+# Configurações locais
+*.env
+*.local
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
