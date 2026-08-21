@@ -12,7 +12,7 @@ O objetivo é que os alunos pratiquem a escrita de **testes unitários** e a **a
 
 ## 📂 Estrutura do Projeto
 
-
+```
 calculadora-tests/
 │
 ├── src/
@@ -26,7 +26,7 @@ calculadora-tests/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 
 ## 🚀 Como começar
@@ -40,12 +40,12 @@ calculadora-tests/
 2. **Instalar dependências**
    ```bash
    pip install -r requirements.txt
-   
+   ```
 
 3. **Executar os testes**
    ```bash
    pytest
- 
+   ```
 
 
 ## 🧪 Atividade Prática: Laboratório Hands-On
@@ -70,7 +70,7 @@ Em duplas, vocês irão:
    Rode no terminal:  
    ```bash
    pytest --cov=src --cov-report=html
-   
+   ```
 
 2. **Abrir Relatório**  
    Navegue até `htmlcov/index.html` e explore visualmente.
