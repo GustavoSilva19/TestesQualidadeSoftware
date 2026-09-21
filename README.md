@@ -1,3 +1,5 @@
+[![Pipeline CI - Testes de Software](https://github.com/GustavoSilva19/TestesQualidadeSoftware/actions/workflows/ci.yml/badge.svg)](https://github.com/GustavoSilva19/TestesQualidadeSoftware/actions/workflows/ci.yml)
+
 # TestesQualidadeSoftware
 Código para realização de testes
 
