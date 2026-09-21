@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-24.04 # Atualizado para evitar alertas do Ubuntu 26
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout do código
@@ -22,10 +22,11 @@ jobs:
     - name: Instalar dependências
       run: |
         python -m pip install --upgrade pip
-        # Instala as ferramentas de teste caso não estejam no seu requirements.txt
-        pip install pytest pytest-cov 
+        pip install pytest pytest-cov
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Executar testes
-      # O comando abaixo procura os testes automaticamente em qualquer pasta do projeto
+      # Esta linha abaixo resolve o problema de importação do "src"
+      env:
+        PYTHONPATH: .
       run: pytest --cov=. --cov-report=term-missing --cov-report=xml
