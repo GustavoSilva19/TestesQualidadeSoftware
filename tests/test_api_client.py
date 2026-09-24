@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from src.api_client import buscar_dados
+from src.api_cliente import buscar_dados
 
 @patch("src.api_client.requests.get")
 def test_buscar_dados_sucesso(mock_get):
